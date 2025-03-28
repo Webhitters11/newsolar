@@ -139,8 +139,9 @@
     margin-top: 30px;
 }
 
-.icantext h5{
-    margin-bottom: 20px;
+.icantext h1{
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .a, h1, h2, h3, h4, h5, h6, p, span {
