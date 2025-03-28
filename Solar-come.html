@@ -353,25 +353,35 @@
 
 <!-- slideshow-container -->
 
-<div class="slideshow-container">
+<div class="container">
     <div class="row">
     <div class="col-md-6">
 
-        <div class="slides-container">
-            <div class="slides-inner">
-              <div class="slide"><img src="img/resource/2.webp" alt=""></div>
-              <div class="slide"><img src="img/resource/1BAT.webp" alt=""></div>
-              <div class="slide"><img src="img/resource/3BAT.jpg" alt=""></div>
-              <div class="slide">4</div>
-              <div class="slide">5</div>
-              <div class="slide">6</div>
-              <div class="slide">7</div>
-              <div class="slide">8</div>
-              <div class="slide">9</div>
-              <div class="slide">10</div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img/resource/commerical5.avif">
+              <div class="text"></div>
             </div>
-          </div>
-          
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img/resource/commerical1.avif">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img/resource/commerical3.avif">
+              <div class="text"></div>
+            </div>
+            
+            </div>
+            <br>
+            
+           
+            
     
     
     
@@ -385,7 +395,7 @@
         <p>With a fully automated setup and modern machinery, Servotech's Mono Perc solar panels undergo stringent manufacturing and quality testing procedures. The outcome? Solar modules are renowned for their high power, efficiency, reliability, durability, and resilience.</p>
          
        
-        <div class="col-md-6 Hybrid" >
+        
             <h5>Hybrid Solar Panels</h5>
             <p>Our specialization in rooftop solar systems ensures you get a solution tailored to your specific needs. As a leading rooftop solar system company in Madhya Pradesh, we leverage our extensive experience to design and install systems that maximize efficiency and performance. Trust in our expertise to provide you with the best solar panels on roof for optimal energy savings.</p>
             <h6>KEY FEATURES</h6>
@@ -455,7 +465,7 @@
             </div>
 
         
-        </div>
+        
     </div>
     </div>
     </div>
@@ -623,66 +633,25 @@
 
        
         <script>
-            var slideDelay = 1.5;
-            var slideDuration = 0.3;
-    
-            var slides = document.querySelectorAll(".slide");
-            var prevButton = document.querySelector("#prevButton");
-            var nextButton = document.querySelector("#nextButton");
-    
-            // Initialize GSAP animations
-            for (var i = 0; i < slides.length; i++) {
-                gsap.set(slides[i], {
-                    backgroundColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
-                    xPercent: i * 100
-                });
-            }
-    
-            var wrap = wrapPartial(-100, (slides.length - 1) * 100);
-            var timer = gsap.delayedCall(slideDelay, autoPlay);
-            var animation = null;
-    
-            prevButton.addEventListener("click", function() {
-                animateSlides(100);
-            });
-    
-            nextButton.addEventListener("click", function() {
-                animateSlides(-100);
-            });
-    
-            function animateSlides(delta) {
-                animation = gsap.to(slides, {
-                    duration: slideDuration,
-                    xPercent: function(i, target) {      
-                        return (Math.round(gsap.getProperty(target, "xPercent") / 100) * 100) + delta;
-                    },
-                    modifiers: {
-                        xPercent: wrap
-                    },
-                    onComplete: restartTimer
-                });  
-            }
-    
-            function autoPlay() {  
-                if (!animation) {
-                    animateSlides(-100);
-                }
-            }
-    
-            function restartTimer() {  
-                if (animation === this) {
-                    animation = null;
-                    timer.restart(true);
-                }
-            }
-    
-            function wrapPartial(min, max) {  
-                var r = max - min;  
-                return function(value) {
-                    var v = value - min;
-                    return ((r + v % r) % r) + min;
-                }
-            }
+            let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+  slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
         </script>
 
 		<!-- JS here -->
