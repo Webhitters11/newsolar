@@ -263,6 +263,8 @@ label {
 .breadcrumb-wrap.text-left {
   text-align: center !important;
 }
+
+
 .btn-after {
   width: 100%;
   height: 45px;
@@ -481,6 +483,7 @@ label {
 }
 #mobile-menu {
   display: block;
+  
 }
 
 .right-menu li {
@@ -791,7 +794,6 @@ label {
 .header-three {
 }
 .header-three .menu-area {
-  margin-bottom: -90px;
   border-top: 0;
   position: relative;
   z-index: 1;
@@ -909,9 +911,21 @@ label {
   position: relative;
   min-height: 400px;
   background-repeat: no-repeat;
-  background-position: 0 center;
+  background-position:  center;
   background: #444;
 }
+
+.breadcrumb-area::before{
+  content: '';
+  position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: rgba(0, 0, 0, 0.5);
+ z-index: 1;
+}
+
 .breadcrumb {
   display: inline-block;
   -ms-flex-wrap: wrap;
@@ -921,6 +935,8 @@ label {
   list-style: none;
   background-color: unset;
   border-radius: 0;
+  position:relative;
+  z-index: 2;
 }
 .breadcrumb li {
   display: inline-block;
@@ -937,11 +953,14 @@ label {
   color: #ddd;
   content: "|";
 }
+
 .breadcrumb-title h2 {
+  position: relative;
   font-size: 48px;
   margin-bottom: 25px;
   line-height: 1;
   color: #fff;
+  z-index: 2;
 }
 .breadcrumb-title p {
   margin-bottom: 0;
@@ -9879,4 +9898,57 @@ div.single-cta:last-child {
   border-radius: 50%;
   border: 1px solid blue;
 } */
+
+.f-contact span {
+  color: #ffffffb3;
+  display: block;
+  margin-top: 10px;
+}
+
+.menu-area{
+  background-color: white;
+}
+
+/*////////////solar-comer/////////////*/
+
+
+
+.Hybridfa{
+  display: flex;
+  align-items: center;
+
+}
+
+.fadiv .fa-circle-check{
+  font-size: 18px;
+}
+
+/* slider */
+
+
+.slides-container {
+  position: relative;
+  overflow: hidden;  
+  display: flex;
+  flex: 1;
+}
+
+.slide {
+  position: absolute;
+  font-size: 90px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.slides-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;  
+  overflow: hidden;
+}
 
