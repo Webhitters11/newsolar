@@ -135,8 +135,10 @@
     background-color: white;
 }
 
-.icantext{
-    margin-top: 30px;
+.icantext h3{
+    text-align: center;
+    padding: 0px 0 40px 0;
+    font-size: 40px !important;
 }
 
 .icantext h1{

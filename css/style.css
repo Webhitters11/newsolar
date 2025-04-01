@@ -9849,7 +9849,8 @@ div.single-cta:last-child {
   border-radius: 20px;
   transition: all 0.4s ease-in-out;
   border: 1px solid #d1d1d1;
-  overflow: hidden; 
+  overflow: hidden;
+  height: 100%;
 }
 .comm-img:hover{
   box-shadow: 1px 1px 10px black;
@@ -10128,3 +10129,205 @@ div.single-cta:last-child {
     -ms-transform:  translate(1px,22px)  ;
   }
 }
+
+/* Benefits 7 cards */
+
+
+
+.Benefits2{
+  padding: 20px 0 40px 20px;
+}
+
+.Benefits2card:hover{
+  background-color: #e6e6e6;
+  color: black;
+  color: rgb(118, 194, 27);
+}
+
+.Benefits2card{
+  min-height: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.fa-certificate{
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.Benefits{
+  text-align: center;
+  padding: 40px 0 30px 0;
+  font-size: 40px;
+}
+
+/* Benefits 7 cards End... */
+
+.Hybridh{
+ 
+  padding-top: 60px;
+  font-size: 20px;
+}
+
+.Hybridhp{
+  line-height: 22px;
+}
+
+.Features{
+  text-align: center;
+}
+
+.fa-certificate:hover{
+  --fa: "\f0a3";
+  color: rgb(118, 194, 27);
+  
+}
+
+.indtext{
+  line-height: 22px;
+}
+
+.IndustrialS .row{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+ 
+  
+}
+
+.Industrialh{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Industry solar */
+
+.Industrysolarh{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.Industrysolar span{
+color: rgb(118, 194, 27);
+font-weight: 800;
+}
+
+.red span{
+  color: rgb(118, 194, 27);
+  font-weight: 500;
+}
+
+.big{
+  font-size: 20px;
+}
+
+.panel3{
+  text-align: center;
+}
+
+/* battery comerical */
+
+.Complete-Guide{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Complete-Guide p{
+    line-height: 20px;
+}
+
+.Complete-Guide2 h3{
+ text-align: left;
+ padding-bottom: 20px;
+ font-size: 35px;
+}
+
+.Complete-Guide2 img{
+  width: 80%;
+}
+
+.Complete-Guide2{
+  text-align: center;
+}
+
+.Complete-Guide2 p{
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+.Complete-Guide3{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.Complete-Guide3 p{
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.Complete-Guide4{
+    padding-top: 10px;
+}
+
+.Complete-Guide4 p{
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.Complete-Guide5{
+  padding-top: 10px;
+}
+
+.Complete-Guide5 p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.Complete-Guide6{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Complete-Guide6 h3{
+     padding-bottom: 10px;
+     font-size: 35px
+}
+
+.Complete-Guide6 img{
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.Complete-Guide6 p{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.Complete-Guide7{
+  padding-top: 10px;
+}
+
+.Complete-Guide7 p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.Complete-Guide8 p{
+  line-height: 20px;
+  padding: 10px 0 10px 0;
+}
+
+.Complete-Guide9 p{
+  padding: 10px 0 10px 0;
+  line-height: 20px;
+}
+
+.Complete-Guide10 p{
+  padding-top: 10px;
+  
+}
+/* battery comerical end */
