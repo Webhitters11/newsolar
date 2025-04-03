@@ -915,7 +915,7 @@ label {
   background: #444;
 }
 
-.breadcrumb-area::before{
+/* .breadcrumb-area::before{
   content: '';
   position: absolute;
  top: 0;
@@ -924,7 +924,7 @@ label {
  right: 0;
  background: rgba(0, 0, 0, 0.5);
  z-index: 1;
-}
+} */
 
 .breadcrumb {
   display: inline-block;
@@ -1413,7 +1413,8 @@ label {
 }
 .about-content li {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: -80px;
+  
 }
 .about-title h2 span {
   color: #76c21b;
@@ -1707,7 +1708,7 @@ label {
 }
 .section-title h5 {
   color: #76c21b;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 .section-title h2 {
   font-size: 60px;
@@ -10247,10 +10248,6 @@ font-weight: 800;
   width: 80%;
 }
 
-.Complete-Guide2{
-  text-align: center;
-}
-
 .Complete-Guide2 p{
   line-height: 20px;
   padding-top: 20px;
@@ -10331,3 +10328,50 @@ font-weight: 800;
   
 }
 /* battery comerical end */
+
+.Battery-section h2{
+  padding-bottom: 25px;
+  font-size: 40px;
+}
+
+.Battery-section img{
+   width: 70%;
+   justify-content: center !important;
+   text-align: center !important;
+   align-items: center !important;
+}
+
+.Battery-section h2{
+  padding-bottom: 25px;
+  font-size: 40px;
+}
+
+.Battery-section p{
+   line-height: 20px;
+   padding-bottom: 20px;
+   font-size: 20px;
+}
+
+.batteryline{
+  text-decoration: underline;
+}
+
+.flip-card-front img{
+  height: 100%;
+}
+
+.Inverters{
+  margin-left: 252px !important;
+}
+
+.Solar{
+  margin-top: -115px !important;
+  margin-left: 252px !important;
+}
+
+.Battery{
+  margin-top: -57px !important;
+  margin-left: 252px !important;
+}
+
+
